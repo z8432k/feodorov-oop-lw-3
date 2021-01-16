@@ -7,15 +7,18 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-
-    cout << "Lab 3" << endl << endl;
-
     ComplexNum cn(3, 7);
     complex<double> cn_t {3., 7.};
 
     ComplexNum cn2(10, 2);
     complex<double> cn2_t {10., 2.};
 
+    cout << endl;
+
+    cout << "First num:" << static_cast<string>(cn) << endl;
+    cout << "Second num:" << static_cast<string>(cn2) << endl;
+
+    cout << endl;
 
     auto result = cn + cn2;
     assert(result == cn_t + cn2_t);
