@@ -20,6 +20,8 @@ int main(int argc, char** argv) {
 
     cout << endl;
 
+    cout << "Check class operators:" << endl << endl;
+
     auto result = cn + cn2;
     assert(result == cn_t + cn2_t);
     cout << "+ OK: " << static_cast<string>(result) << endl;
